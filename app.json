@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "SubNest",
+    "slug": "subtrack-sdk58",
+    "scheme": "subtrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#14141f",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.subtrack.mobile",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SubNest to select subscription logos from your photo library."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "88167917-d8eb-4e0e-babf-817b514d0a1c"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
